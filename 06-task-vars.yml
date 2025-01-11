@@ -7,9 +7,13 @@
     Traineer: "Kishor Reddy"
   tasks:
   - name: print the variable
-    vars:
+    vars: #Task level variables
       Course: ansible
     ansible.builtin.debug: 
         msg: "Course is {{Course}} Duration is {{Duration}} Traineer is {{Traineer}}"
+  - name: print the variable1
+    vars: 
+    ansible.builtin.debug:
+      msg: "Course is {{Course}} Duration is {{Duration}} Traineer is {{Traineer}}"
 
 
