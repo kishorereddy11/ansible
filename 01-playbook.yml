@@ -1,0 +1,6 @@
+- name: my first play book with ping command
+  hosts: web
+  tasks: 
+  - name: ping the server
+    ansible.builtin.ping:
+    
