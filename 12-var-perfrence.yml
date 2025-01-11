@@ -1,0 +1,17 @@
+- name: variable perfrence
+  hosts: local
+  connection: local
+  vars:
+    Greet: "From play"
+  vars_files:
+  - course.yml
+  vars_prompt:
+  - name: Greet
+    prompt: enter the value
+    private: false
+  tasks:
+  - name: variable
+    vars:
+      Greet: "From Task"
+    ansible.builtin.debug:
+      msg: "Hello from {{Greet}}"
