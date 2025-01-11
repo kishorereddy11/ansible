@@ -1,13 +1,13 @@
 - name: variable
   hosts: local
   connection: local
-  vars: 
+  vars: #play level variables gobal variables
     Course: "DevOps with AWs"
     Duration: 120Hrs
     Traineer: "Kishor Reddy"
   tasks:
   - name: print the variable
-    vars: #Task level variables
+    vars: #Task level variables local variables
       Course: ansible
     ansible.builtin.debug: 
         msg: "Course is {{Course}} Duration is {{Duration}} Traineer is {{Traineer}}"
