@@ -10,6 +10,6 @@
     vars:
       Course: ansible
     ansible.builtin.debug: 
-        msg: "Course is {{course}} Duration is {{Duration}} Traineer is {{Traineer}}"
+        msg: "Course is {{Course}} Duration is {{Duration}} Traineer is {{Traineer}}"
 
 
