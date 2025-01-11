@@ -1,0 +1,15 @@
+- name: data types
+  hosts: local
+  connection: local
+  vars:
+    course_name: "DevOps with AWS" #String 
+    duration: 120
+    fee: 1.0
+    topics: #list
+    - AWS
+    - ansible
+    - docker
+    live: true #boolean
+    tools: #map
+      ci: jenkins
+      cloud: AWS
