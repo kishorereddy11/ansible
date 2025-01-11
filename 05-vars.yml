@@ -1,7 +1,7 @@
 - name: variables
   hosts: local
   connection: local
-  vars:
+  vars: #play level variables
     Course: "DevOps with AWS"
     Duration: 120Hrs
     Traineer: "Kishor Reddy"
