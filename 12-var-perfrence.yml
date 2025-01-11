@@ -3,8 +3,8 @@
   connection: local
   vars:
     Greet: "From play"
-  vars_files:
-  - course.yml
+  # vars_files:
+  # - course.yml
   vars_prompt:
   - name: Greet
     prompt: enter the value
@@ -19,3 +19,4 @@
 
 #1.first perfernce command line or agrs
 #2.Tasks level
+#3.Files
