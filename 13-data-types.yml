@@ -13,3 +13,7 @@
     tools: #map
       ci: jenkins
       cloud: AWS
+  tasks:
+  - name: print course details
+    ansible.builtin.debug:
+      msg: "Hello {{course_name}} duration {{duration}} fee {{fee}} topics {{topics}} is it {{live}} tools covered {{tools}}"
