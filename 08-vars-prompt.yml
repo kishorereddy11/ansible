@@ -10,5 +10,5 @@
     prompt: please enter traineer name
   tasks:
   - name: print course information
-  ansible.builtin.debug:
+    ansible.builtin.debug:
     msg: "course is {{course}} duration is {{duration}} traineer is {{traineer}}"
