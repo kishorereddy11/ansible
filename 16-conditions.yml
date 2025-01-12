@@ -1,0 +1,9 @@
+- name: install nginx
+  hosts: local
+  connection: local
+  tasks:
+  - name: install nginx in RHEL
+    ansible.builtin.debug:
+      name: nginx
+      state: installed
+    when: ansible_os_family == "RHEL"
