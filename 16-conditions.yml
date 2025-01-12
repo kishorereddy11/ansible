@@ -6,4 +6,4 @@
     ansible.builtin.debug:
       name: nginx
       state: installed
-    when: ansible_os_family == "Redhat"
+    when: ansible_os_family == "RedHat"
