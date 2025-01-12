@@ -5,3 +5,8 @@
   - name: handle unhandle variables
     ansible.builtin.debug:
       msg: "Hello {{person | default ('Ramesh')}}"
+  - name: convert string to list
+    vars: 
+      fruits: "apple ,banana, organe"
+    ansible.builtin.debug:
+      msg: "Fruits are : {{fruits}} List of fruits: {{fruits | spilt(',')}}"
