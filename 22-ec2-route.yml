@@ -33,3 +33,5 @@
       # msg: "Private IP of {{ item.item }}: {{ item.instances[0].private_ip_address }}"
       msg: "{{ item.instances[0].private_ip_address }}"    
     loop: "{{ ec2_info.results }}"
+    when: item.instances[0].private_ip_address is defined
+
