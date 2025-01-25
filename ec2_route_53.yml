@@ -2,10 +2,9 @@
   connection: local
   hosts: local
   vars:
-    subnet_id: subnet-07a613b1a9923cd65
-    # vpc_id:
+    subnet_id: subnet-0c19f3c7a2ba2788e
+    sg_id: sg-06664a65d9522acf5
     ami_id: ami-09c813fb71547fc4f
-    sg_id: sg-06664a65d9522acf5 
     instance_type: t3.micro
     instances: 
     - mysql
