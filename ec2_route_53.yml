@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    subnet_id: subnet-07a613b1a9923cd65
+    subnet_id: subnet-0c19f3c7a2ba2788e
     # vpc_id:
     ami_id: ami-09c813fb71547fc4f
     sg_id: sg-06664a65d9522acf5 
