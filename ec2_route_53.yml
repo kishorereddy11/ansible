@@ -1,5 +1,6 @@
 - name: Create Ec2 instances and configure A record in rout53
   connection: local
+  hosts: local
   vars:
     subnet_id: subnet-07a613b1a9923cd65
     # vpc_id:
