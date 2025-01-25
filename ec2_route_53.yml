@@ -1,8 +1,7 @@
 - name: Create Ec2 instances and configure A record in rout53
-  hosts: local
   connection: local
   vars:
-    subnet_id: subnet-0c19f3c7a2ba2788e
+    subnet_id: subnet-07a613b1a9923cd65
     # vpc_id:
     ami_id: ami-09c813fb71547fc4f
     sg_id: sg-06664a65d9522acf5 
@@ -19,7 +18,7 @@
     loop:
     - boto3
     - botocore
-
+    
   - name: create EC2 instances
     amazon.aws.ec2_instance:
       name: "{{ item }}"
