@@ -21,6 +21,7 @@
     - botocore
   - name: create ec2 instances
     amazon.aws.ec2_instance:
+      state: absent
       name: "{{ item }}"
       subnet_id: "{{ subnet_id }}"
       security_group: "{{ sg_id }}"
